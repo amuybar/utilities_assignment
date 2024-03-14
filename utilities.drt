@@ -1,0 +1,71 @@
+// Function to add two numbers
+int sum(int a, int b) {
+  return a + b;
+}
+
+// Program to use a for loop to print numbers from 1 to 10
+void main() {
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+  }
+}
+
+// Program to use a switch statement to check for different string values
+void main() {
+  String input = "hello";
+
+  switch (input) {
+    case "hello":
+      print("You entered hello");
+      break;
+    case "world":
+      print("You entered world");
+      break;
+    default:
+      print("You entered something else");
+  }
+}
+
+// Program to use a while loop to print numbers from 20 to 10
+void main() {
+  int i = 20;
+  while (i >= 10) {
+    print(i);
+    i--;
+  }
+}
+
+// Program to use an if-else statement to check if a number is even or odd
+void main() {
+  int number = 5;
+
+  if (number % 2 == 0) {
+    print("The number is even");
+  } else {
+    print("The number is odd");
+  }
+}
+
+// Program to use a try-catch block to catch an exception
+void main() {
+  try {
+    int x = int.parse("hello");
+    print(x);
+  } catch (e) {
+    print("Error: $e");
+  }
+}
+
+// Program to find the largest number in a list
+void main() {
+  List<int> numbers = [1, 10, 2, 8, 4, 5];
+  int largest = numbers[0];
+
+  for (int i = 1; i < numbers.length; i++) {
+    if (numbers[i] > largest) {
+      largest = numbers[i];
+    }
+  }
+
+  print("The largest number is $largest");
+}
